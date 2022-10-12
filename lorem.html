@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        color: white;
+        box-sizing: border-box;
+
+    }
+
+    body{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        margin: 0;
+
+        background: url(background.jpg);
+        grid-template-rows: 5% 10% 40% 10% 30% 5%;
+        grid-template-columns: 7% 12% 1fr 1fr 1fr;
+
+        grid-template-areas: 
+        " header header header header header "
+        " . . main1 main2 main3 "
+        "sidebar sidebar main1 main2 main3 "
+        " . . main1 main2 main3 "
+        ". lorem lorem lorem lorem"
+        " footer footer footer footer footer "
+        ;
+    }
+    .header{
+        background-color: rgba(0, 0, 255, 0.5);
+        grid-area: header;
+    }
+    .sidebar{
+        background-color: rgba(0, 0, 0, 0.5);
+        grid-area: sidebar;
+        display: flex;
+    }
+    .sidebar>div{
+        background-color: blue;
+    }
+
+    .main1{
+        background-color: rgba(0, 0, 0, 0.5);
+        grid-area: main1;
+    }
+
+    .main2{
+        background-color: rgba(0, 0, 0, 0.5);
+        grid-area: main2;
+    }
+
+    .main3{
+        background-color: rgba(0, 0, 0, 0.5);
+        grid-area: main3;
+    }
+
+    .lorem{
+        background-color: rgba(0, 0, 0, 0.5);
+        grid-area: lorem;
+    }
+
+
+
+    .footer{
+        background-color: rgba(0, 0, 255, 0.5);
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="header">Header</div>
+    <div class="sidebar">
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>     
+    </div>
+    <div class="main1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Eligendi quas sint eius assumenda voluptatum vel debitis blanditiis quasi dignissimos
+        est eveniet maxime voluptate, unde totam quae hic officia eum quidem?
+    
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit tempora veritatis at. Commodi veritatis, 
+        ducimus corporis perferendis illo tempora minima placeat 
+        earum alias consequuntur porro assumenda iusto atque saepe laudantium!
+    </div>
+    <div class="main2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Eligendi quas sint eius assumenda voluptatum vel debitis blanditiis quasi dignissimos
+        est eveniet maxime voluptate, unde totam quae hic officia eum quidem?
+    
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit tempora veritatis at. Commodi veritatis, 
+        ducimus corporis perferendis illo tempora minima placeat 
+        earum alias consequuntur porro assumenda iusto atque saepe laudantium!</div>
+    <div class="main3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Eligendi quas sint eius assumenda voluptatum vel debitis blanditiis quasi dignissimos
+        est eveniet maxime voluptate, unde totam quae hic officia eum quidem?
+    
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit tempora veritatis at. Commodi veritatis, 
+        ducimus corporis perferendis illo tempora minima placeat 
+        earum alias consequuntur porro assumenda iusto atque saepe laudantium!</div>
+
+    <div class="lorem">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eligendi quas sint eius assumenda voluptatum vel debitis blanditiis quasi dignissimos
+            est eveniet maxime voluptate, unde totam quae hic officia eum quidem?
+        
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit tempora veritatis at. Commodi veritatis, 
+            ducimus corporis perferendis illo tempora minima placeat 
+            earum alias consequuntur porro assumenda iusto atque saepe laudantium!</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eligendi quas sint eius assumenda voluptatum vel debitis blanditiis quasi dignissimos
+            est eveniet maxime voluptate, unde totam quae hic officia eum quidem?
+        
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit tempora veritatis at. Commodi veritatis, 
+            ducimus corporis perferendis illo tempora minima placeat 
+            earum alias consequuntur porro assumenda iusto atque saepe laudantium!</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eligendi quas sint eius assumenda voluptatum vel debitis blanditiis quasi dignissimos
+            est eveniet maxime voluptate, unde totam quae hic officia eum quidem?
+        
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit tempora veritatis at. Commodi veritatis, 
+            ducimus corporis perferendis illo tempora minima placeat 
+            earum alias consequuntur porro assumenda iusto atque saepe laudantium!</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
